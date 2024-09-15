@@ -1,5 +1,8 @@
 import CabinCard from "../_components/CabinCard";
 
+// to updating data from catche
+export const revalidate = 0;
+
 export const metadata = {
   title: "Cabins",
 };

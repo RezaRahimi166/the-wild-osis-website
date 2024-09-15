@@ -1,7 +1,11 @@
+import { unstable_noStore as noStore } from "next/cache";
+
 import CabinCard from "@/app/_components/CabinCard";
 import { getCabins } from "@/app/_lib/data-service";
 
 const CabinList = async () => {
+  // Use `unstable_noStore` to disable Next.js's built-in caching for this page
+  // noStore();
   const cabins = await getCabins();
   if (!cabins.length) return null;
 
