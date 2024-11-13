@@ -3,6 +3,7 @@ import CabinCard from "../_components/CabinCard";
 import CabinList from "../_components/CabinList";
 import Spinner from "../_components/Spinner";
 import Filter from "../_components/Filter";
+import ReservationReminder from "../_components/ReservationReminder";
 
 // to updating data from catche
 export const revalidate = 0;
@@ -36,6 +37,7 @@ export default function Page({ searchParams }) {
       </div>
       <Suspense fallback={<Spinner />} key={filter}>
         <CabinList filter={filter} />
+        <ReservationReminder />
       </Suspense>
     </div>
   );
