@@ -13,7 +13,7 @@ async function Reservation({ cabin }) {
   const session = await auth();
 
   return (
-    <div className="flex gap-8flex-col-reverse border border-primary-800 min-h-[400px]">
+    <div className="flex gap-8 flex-col-reverse border border-primary-800 min-h-[400px]">
       <DateSelector
         settings={settings}
         bookedDates={bookedDates}
